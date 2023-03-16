@@ -1,0 +1,199 @@
+#registration--language {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#registration--language img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.login {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.login__header {
+  position: absolute;
+  left: 0;
+  top: 25px;
+  padding: 0 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+.login__page {
+  min-height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.login__slider {
+  flex: 1 1 60%;
+  border-radius: 12px;
+  padding: 90px 0 200px !important;
+  box-shadow: 25px 0px 20px -20px #000000;
+  background: radial-gradient(circle, rgba(75, 115, 255, 0.2) 20%, rgba(0, 0, 0, 0) 70%);
+}
+.login__slider__item {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login__slider__item-img {
+  margin-bottom: 40px;
+}
+.login__slider__item-text {
+  text-align: center;
+  max-width: 35%;
+}
+.login__slider__item-text h3 {
+  font-weight: 500;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.login__slider__item-text p {
+  font-size: 16px;
+}
+.login__slider-arrow {
+  border: 1px solid #2f53ff !important;
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.login__slider-arrow::after {
+  font-size: 100% !important;
+}
+.login__slider-arrow.swiper-button-next {
+  right: var(--swiper-navigation-sides-offset, 20%);
+}
+.login__slider-arrow.swiper-button-prev {
+  left: var(--swiper-navigation-sides-offset, 20%);
+}
+.login__slider-pagination {
+  bottom: 150px !important;
+}
+.login__form {
+  display: none;
+}
+.login__form.is-active {
+  display: block;
+}
+.login__form-wrapper {
+  flex: 1 1 40%;
+  padding: 100px 4.5%;
+}
+.login__form-title {
+  font-weight: 600;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.login__form-tab-btn {
+  color: #2f53ff;
+  background: none;
+  margin-left: 15px;
+}
+.login__form-subtitle {
+  font-size: 16px;
+}
+.login__form-items {
+  margin: 40px -15px 25px;
+}
+.login__form .submit-btn {
+  width: 100%;
+}
+.login__form .passwordrecovery-approved-text {
+  display: none;
+}
+.login__form .passwordrecovery-approved-text.is-active {
+  display: block;
+}
+.login__form .passwordrecovery-approved-text h1 {
+  font-weight: 600;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+.login__form .passwordrecovery-approved-text h3 {
+  font-size: 22px;
+}
+.login__form .passwordrecovery-approved-text p {
+  font-weight: 300;
+  font-size: 18px;
+}
+.login #registration--password {
+  padding-right: 60px;
+}
+.login__password-show-btn {
+  position: absolute;
+  background: none;
+  top: 35px;
+  right: 20px;
+  width: 22px;
+  height: 15px;
+  -webkit-filter: invert(40%) sepia(71%) saturate(6313%) hue-rotate(226deg) brightness(97%) contrast(113%) opacity(25%);
+          filter: invert(40%) sepia(71%) saturate(6313%) hue-rotate(226deg) brightness(97%) contrast(113%) opacity(25%);
+}
+.login__password-show-btn.is-active:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  width: 120%;
+  border-top: 2px solid #000;
+  z-index: 2;
+}
+.login__password-show-btn:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/icons/eyeopen.svg");
+}
+.login-terms {
+  flex-direction: row;
+  align-items: center;
+}
+.login-terms input {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+.login-terms .system-msg {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1.2;
+  margin: 0 0 0 15px;
+  font-size: 14px;
+}
+.login-terms .system-msg a {
+  color: #2f53ff;
+}
+.login__copyright {
+  position: absolute;
+  font-size: 12px;
+  color: #bbbbbb;
+  bottom: 40px;
+  left: 40px;
+}
+
+@media (max-width: 767px) {
+  .login__slider {
+    display: none !important;
+  }
+  .login__header {
+    padding: 0 25px;
+  }
+  .login__form-wrapper {
+    padding: 100px 30px 0;
+  }
+}

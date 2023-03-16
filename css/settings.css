@@ -1,0 +1,281 @@
+.modal {
+  display: block !important;
+  text-align: left !important;
+  padding: 45px 45px 35px;
+  width: 430px !important;
+}
+
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+.row1 .row__col {
+  margin: 10px;
+}
+.row1__col1 {
+  flex: 1 1 65%;
+  padding: 30px 40px 25px;
+}
+.row1__cols23 {
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+}
+.row1__col2 {
+  padding: 30px 35px 25px;
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.row1__col2-content {
+  display: flex;
+  justify-content: space-between;
+}
+.row1__col2-text-delete {
+  align-self: start;
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+.row1__col2 .gray-btn {
+  width: 100%;
+  margin-top: 30px;
+}
+.row1__col2 .user-avatar-wrapper {
+  min-width: 100px;
+  max-width: 100px;
+  min-height: 100px;
+  max-height: 100px;
+}
+.row1__col3 {
+  padding: 25px 35px;
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.row1 .line-separator {
+  margin-bottom: 35px;
+}
+
+.row2 {
+  display: flex;
+  margin: 30px -10px -10px;
+  flex-wrap: wrap;
+}
+.row2 .row__col {
+  margin: 10px;
+}
+.row2__col1 {
+  flex: 1 1 65%;
+  margin: 10px;
+  padding: 35px 45px 25px;
+  display: flex;
+  flex-direction: column;
+}
+.row2__col2 {
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.row2 .line-separator {
+  margin-bottom: 35px;
+}
+
+.row3 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px -10px 40px;
+}
+.row3__col {
+  position: relative;
+  flex: 1 1 30%;
+  margin: 10px;
+  padding: 25px 25px 15px;
+}
+.row3__col__block1 {
+  display: flex;
+  align-items: center;
+}
+.row3__col__block2 {
+  margin-top: 20px;
+}
+.row3__col .line-separator {
+  margin-bottom: 20px;
+}
+.row3__col .gray-btn {
+  width: 100%;
+  text-align: center;
+}
+.row3__col__img {
+  padding: 12px;
+  margin-right: 15px;
+  min-width: 48px;
+  min-height: 48px;
+  width: 48px;
+  height: 48px;
+  max-width: 48px;
+  max-height: 48px;
+  background: rgba(47, 83, 255, 0.2);
+  border-radius: 12px;
+}
+.row3__col__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: 0.3s ease;
+}
+.row3__col__img img:hover {
+  -webkit-filter: drop-shadow(0 4px 5px #2f52ff);
+          filter: drop-shadow(0 4px 5px #2f52ff);
+}
+.row3__col .status-label {
+  margin-left: auto;
+  align-self: start;
+}
+.row3__col__text {
+  margin-right: 25px;
+}
+.row3__col__key {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.row3__col__value {
+  color: rgba(255, 255, 255, 0.4);
+}
+.row3__col .user-country-select {
+  margin-left: auto;
+}
+
+.settings-heading {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.settings-userdata {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+.settings-userdata-item {
+  flex: 1 1 45%;
+}
+.settings-userdata-item input#settings-userdata--instagram {
+  position: relative;
+}
+.settings-userdata-item input#settings-userdata--instagram::-webkit-input-placeholder {
+  background: url("../img/icons/instagram_placeholder.svg") left top/contain no-repeat;
+}
+.settings-userdata-item input#settings-userdata--instagram::-moz-placeholder {
+  background: url("../img/icons/instagram_placeholder.svg") 17px 12px/18px no-repeat;
+}
+.settings-useradress {
+  margin: -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.settings-useradress-item {
+  flex: 1 0 22%;
+}
+.settings-useradress-item input {
+  width: 100%;
+}
+.settings-useradress-item:last-child {
+  flex: 0 1 10%;
+}
+.settings-usernotifications {
+  margin: auto -15px;
+}
+.settings-usernotifications-item {
+  flex-direction: row;
+  align-items: center;
+}
+.settings-usernotifications-item input {
+  position: relative;
+  -webkit-appearance: none;
+          appearance: none;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  height: 24px;
+  width: 40px;
+  max-width: 40px;
+  min-width: 40px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.settings-usernotifications-item input:before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  background: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: 0.2s ease;
+}
+.settings-usernotifications-item input:checked {
+  background: #2f53ff;
+}
+.settings-usernotifications-item input:checked:before {
+  left: 18px;
+}
+.settings-usernotifications-item label {
+  margin: 0 0 0 12px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.settings-passchange {
+  margin: -15px;
+}
+.settings-cardchange {
+  margin: -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.settings-cardchange-item {
+  flex: 1 1 40%;
+}
+.settings-cardchange-item input {
+  width: 100%;
+}
+.settings-cardchange-item input#settings-cardchange--cardexp {
+  letter-spacing: 0.2em;
+}
+.settings-cardchange-item:first-child {
+  flex: 1 1 100%;
+}
+.settings-cardchange-item:nth-child(2) {
+  max-width: 95px;
+}
+
+.status-label {
+  padding: 5px 15px;
+}
+
+.system-msg {
+  margin-top: 10px;
+}
+
+@media (max-width: 1279px) {
+  .settings-useradress-item {
+    flex: 1 0 40%;
+  }
+  .settings-useradress-item:last-child {
+    flex: 0 1 20%;
+  }
+}
+@media (max-width: 1023px) {
+  .row1__cols23 {
+    flex: 0 1 100%;
+    order: -1;
+  }
+}
+@media (max-width: 767px) {
+  .row__col {
+    padding: 25px !important;
+  }
+}

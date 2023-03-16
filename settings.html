@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/settings.css">
+    <title>Настройки</title>
+</head>
+
+<body>
+    <div class="body__wrapper">
+        <div class="body">
+            <script src="./js/sidebar.js"></script>
+
+            <main class="main">
+                <script src="./js/header.js"></script>
+
+                <section class="page" id="settings">
+                    <h1 class="page__heading">Настройки</h1>
+                    <form action="#">
+                        <article class="row1">
+                            <div class="row1__col1 row__col">
+                                <h3 class="settings-heading">Личные данные</h3>
+                                <div class="line-separator"></div>
+                                <ul class="settings-userdata">
+                                    <li class="settings-userdata-item form-item">
+                                        <label for="settings-userdata--firstname" class="settings-label">Имя</label>
+                                        <input class="settings-input" type="text" id="settings-userdata--firstname">
+                                    </li>
+                                    <li class="settings-userdata-item form-item">
+                                        <label for="settings-userdata--instagram"
+                                            class="settings-label">Instagram</label>
+                                        <input class="settings-input" type="text" id="settings-userdata--instagram"
+                                            placeholder=" ">
+                                    </li>
+                                    <li class="settings-userdata-item form-item">
+                                        <label for="settings-userdata--lastname" class="settings-label">Фамилия</label>
+                                        <input class="settings-input" type="text" id="settings-userdata--lastname">
+                                    </li>
+                                    <li class="settings-userdata-item form-item">
+                                        <label for="settings-userdata--phone" class="settings-label">Телефон <span
+                                                class="status-label is-enabled">Подтвержден</span></label>
+                                        <input class="settings-input" type="text" id="settings-userdata--phone"
+                                            placeholder="+7">
+                                    </li>
+                                    <li class="settings-userdata-item form-item">
+                                        <label for="settings-userdata--middlename"
+                                            class="settings-label">Отчество</label>
+                                        <input class="settings-input" type="text" id="settings-userdata--middletname">
+                                    </li>
+                                    <li class="settings-userdata-item form-item">
+                                        <label for="settings-userdata--phone" class="settings-label">E-mail <span
+                                                class="status-label is-disabled">Не подтвержден</span></label>
+                                        <input class="settings-input" type="text" id="settings-userdata--email"
+                                            placeholder="email@example.com">
+                                        <div class="system-msg">Письмо для подтверждения было направлено на почту
+                                            <span class="tooltip">
+                                                <span class="tooltip-text">Краткое пояснение к<br>какому-либо
+                                                    элементу.<br>Использовать тег br.
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row1__cols23">
+                                <div class="row1__col2 row__col">
+                                    <div class="row1__col2-content">
+                                        <div class="user-avatar-wrapper">
+                                            <img src="./img/avatar.png" alt="Ava" class="user-avatar">
+                                        </div>
+                                        <a href="##" class="row1__col2-text-delete">Удалить аватар</a>
+                                    </div>
+                                    <button class="gray-btn">Сменить аватар</button>
+                                </div>
+                                <div class="row1__col3 row__col">
+                                    <li class="settings-userdata form-item" style="margin: 0;">
+                                        <label for="settings-userdata--nickname" class="settings-label">Nickname</label>
+                                        <input class="settings-input" type="text" id="settings-userdata--nickname">
+                                    </li>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="row2">
+                            <div class="row2__col1 row__col">
+                                <h3 class="settings-heading">Адрес для доставки</h3>
+                                <div class="line-separator"></div>
+                                <ul class="settings-useradress">
+                                    <li class="settings-useradress-item form-item">
+                                        <label for="settings-useradress--region" class="settings-label">Регион</label>
+                                        <input class="settings-input" type="text" id="settings-useradress--region">
+                                    </li>
+                                    <li class="settings-useradress-item form-item">
+                                        <label for="settings-useradress--city" class="settings-label">Город</label>
+                                        <input class="settings-input" type="text" id="settings-useradress--city">
+                                    </li>
+                                    <li class="settings-useradress-item form-item">
+                                        <label for="settings-useradress--street" class="settings-label">Улица</label>
+                                        <input class="settings-input" type="text" id="settings-useradress--street">
+                                    </li>
+                                    <li class="settings-useradress-item form-item">
+                                        <label for="settings-useradress--house" class="settings-label">Дом</label>
+                                        <input class="settings-input" type="text" id="settings-useradress--house">
+                                    </li>
+                                </ul>
+                                <div class="settings-useradress-item form-item"
+                                    style="flex-direction: row; align-items: center; margin: 15px 0 0;">
+                                    <label for="settings-useradress--index" class="settings-label"
+                                        style="margin: 0 15px 0 0;">Индекс:</label>
+                                    <p id="settings-useradress--index" style="font-size: 12px;color: rgba(255, 255, 255, 0.4);
+                                ">137521287</p>
+                                </div>
+                            </div>
+                            <div class="row2__col2 row__col">
+                                <h3 class="settings-heading">Адрес для доставки</h3>
+                                <div class="line-separator"></div>
+                                <ul class="settings-usernotifications">
+                                    <li class="settings-usernotifications-item form-item">
+                                        <input type="checkbox" id="settings-usernotifications--news"
+                                            name="settings-usernotifications">
+                                        <label for="settings-usernotifications--news" class="settings-label">Уведомлять
+                                            о появлении новинок</label>
+                                    </li>
+                                    <li class="settings-usernotifications-item form-item">
+                                        <input type="checkbox" id="settings-usernotifications--autobet"
+                                            name="settings-usernotifications">
+                                        <label for="settings-usernotifications--autobet"
+                                            class="settings-label">Автоставки (лот выигран, закончились ставки)</label>
+                                    </li>
+                                    <li class="settings-usernotifications-item form-item">
+                                        <input type="checkbox" id="settings-usernotifications--promo"
+                                            name="settings-usernotifications" checked>
+                                        <label for="settings-usernotifications--promo" class="settings-label">Получать
+                                            письма о промо-акциях</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                        <article class="row3">
+                            <div class="row3__col1 row3__col row__col">
+                                <div class="row3__col__block1">
+                                    <div class="row3__col__img">
+                                        <img src="./img/icons/creditcard.svg" alt="">
+                                    </div>
+                                    <div class="row3__col__text">
+                                        <p class="row3__col__key">Карта для вывода</p>
+                                        <p class="row3__col__value"></p>
+                                    </div>
+                                    <div class="status-label is-disabled">Не задана</div>
+                                </div>
+                                <div class="row3__col__block2">
+                                    <button class="gray-btn row3__col__gray-btn" for="cardchange">Подключить</button>
+                                </div>
+                            </div>
+                            <div class="row3__col2 row3__col row__col">
+                                <div class="row3__col__block1">
+                                    <div class="row3__col__img">
+                                        <img src="./img/icons/country.svg" alt="">
+                                    </div>
+                                    <div class="row3__col__text">
+                                        <p class="row3__col__key">Страна</p>
+                                        <p class="row3__col__value user-country-value">Российская федерация</p>
+                                    </div>
+                                    <select class="user-country-select">
+                                        <option value="russia" class="user-country-option">Российская федерация</option>
+                                        <option value="iran" class="user-country-option">Иран</option>
+                                        <option value="afghanistan" class="user-country-option">Афганистан</option>
+                                        <option value="syria" class="user-country-option">Сирия</option>
+                                        <option value="serbia" class="user-country-option">Сербия</option>
+                                        <option value="northkorea" class="user-country-option">Северная Корея</option>
+                                    </select>
+                                </div>
+                                <div class="row3__col__block2">
+                                    <div class="line-separator"></div>
+                                    <p class="system-msg">Страна была установлена автоматически
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row3__col3 row3__col row__col">
+                                <div class="row3__col__block1">
+                                    <div class="row3__col__img">
+                                        <img src="./img/icons/password.svg" alt="">
+                                    </div>
+                                    <div class="row3__col__text">
+                                        <p class="row3__col__key">Пароль</p>
+                                        <p class="row3__col__value">******</p>
+                                    </div>
+                                </div>
+                                <div class="row3__col__block2">
+                                    <button class="gray-btn row3__col__gray-btn" for="passchange">Изменить</button>
+                                </div>
+                            </div>
+                        </article>
+                        <input type="submit" class="submit-btn" style="margin-bottom: 50px" value="Сохранить">
+                    </form>
+                </section>
+                <script src="./js/footer.js"></script>
+            </main>
+            <div class="settings-passchange-modal-wrapper modal-wrapper">
+                <form class="settings-passchange-modal modal" id="passchange" action="#">
+                    <h3 class="settings-heading">Смена пароля</h3>
+                    <div class="line-separator"></div>
+                    <ul class="settings-passchange">
+                        <li class="settings-passchange-item form-item">
+                            <label for="settings-passchange--oldpass" class="settings-label">Старый пароль</label>
+                            <input class="settings-input" type="password" id="settings-passchange--oldpass">
+                        </li>
+                        <li class="settings-passchange-item form-item">
+                            <label for="settings-passchange--newpass" class="settings-label">Новый пароль</label>
+                            <input class="settings-input" type="password" id="settings-passchange--newpass">
+                        </li>
+                        <li class="settings-passchange-item form-item">
+                            <label for="settings-passchange--repeatpass" class="settings-label">Повтор пароля</label>
+                            <input class="settings-input" type="password" id="settings-passchange--repeatpass">
+                        </li>
+                    </ul>
+                    <p class="system-msg">Минимум 6 символов, не менее 1 цифры, хотя бы 1 символ с верхним регистром</p>
+                    <input type="submit" class="submit-btn" value="Сохранить">
+                </form>
+            </div>
+            <div class="settings-cardchange-modal-wrapper modal-wrapper">
+                <form class="settings-cardchange-modal modal" id="cardchange" action="#">
+                    <h3 class="settings-heading">Платёжные данные</h3>
+                    <div class="line-separator"></div>
+                    <ul class="settings-cardchange">
+                        <li class="settings-cardchange-item form-item">
+                            <label for="settings-cardchange--cardnum" class="settings-label">Номер банковской
+                                карты</label>
+                            <input class="settings-input" type="text" id="settings-cardchange--cardnum">
+                        </li>
+                        <li class="settings-cardchange-item form-item">
+                            <label for="settings-cardchange--cardexp" class="settings-label">EXP</label>
+                            <input class="settings-input" type="text" id="settings-cardchange--cardexp"
+                                placeholder="MM/YY">
+                        </li>
+                        <li class="settings-cardchange-item form-item">
+                            <label for="settings-cardchange--cardname" class="settings-label">Имя владельца</label>
+                            <input class="settings-input" type="text" id="settings-cardchange--cardname">
+                        </li>
+                    </ul>
+                    <input type="submit" class="submit-btn" value="Сохранить">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./js/settings.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <script src="./js/swiper-bundle.min.js"></script>
+    <title>Регистрация и вход</title>
+</head>
+
+<body>
+    <div class="body__wrapper">
+        <div class="body">
+            <main class="login">
+                <header class="login__header">
+                    <div class="logo">
+                        <a href="index.html" class="logo-img">
+                            <img src="./img/logo.svg" alt="">
+                        </a>
+                        <h2 class="logo-text">ROYAL<br>AUCTION</h2>
+                    </div>
+                    <button id="login--language"></button>
+                </header>
+                <section class="login__page">
+                    <div class="login__slider swiper">
+                        <div class="login__slider-wrapper swiper-wrapper">
+                            <div class="login__slider__item swiper-slide">
+                                <div class="login__slider__item-img">
+                                    <img src="./img/regslider1.png" alt="">
+                                </div>
+                                <div class="login__slider__item-text">
+                                    <h3>Royal Auction</h3>
+                                    <p>Прежде чем ты начнёшь учавствовать в аукционе, выполни все задания:</p>
+                                </div>
+                            </div>
+                            <div class="login__slider__item swiper-slide">
+                                <div class="login__slider__item-img">
+                                    <img src="./img/regslider1.png" alt="">
+                                </div>
+                                <div class="login__slider__item-text">
+                                    <h3>Royal Auction</h3>
+                                    <p>Прежде чем ты начнёшь учавствовать в аукционе, выполни все задания:</p>
+                                </div>
+                            </div>
+                            <div class="login__slider__item swiper-slide">
+                                <div class="login__slider__item-img">
+                                    <img src="./img/regslider1.png" alt="">
+                                </div>
+                                <div class="login__slider__item-text">
+                                    <h3>Royal Auction</h3>
+                                    <p>Прежде чем ты начнёшь учавствовать в аукционе, выполни все задания:</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="login__slider-arrow swiper-button-prev"></div>
+                        <div class="login__slider-arrow swiper-button-next"></div>
+                        <div class="login__slider-pagination swiper-pagination"></div>
+                        <p class="login__copyright">Royal Auction© 2023. All rights reserved</p>
+                    </div>
+                    <div class="login__form-wrapper">
+                        <form action="#" class="login__form" id="registration">
+                            <div class="login__form-heading">
+                                <h1 class="login__form-title">Завести аккаунт</h1>
+                                <p class="login__form-subtitle">Уже есть аккаунт? <button
+                                        class="login__form-tab-btn" for="login">Войти</button></p>
+                            </div>
+                            <ul class="login__form-items">
+                                <li class="form-item">
+                                    <label for="registration--email">E-mail</label>
+                                    <input type="text" id="registration--email" placeholder="email@example.com">
+                                    <p class="system-msg"></p>
+                                </li>
+                                <li class="form-item">
+                                    <label for="registration--phone">Номер телефона</label>
+                                    <input type="text" id="registration--phone" placeholder="+7">
+                                    <p class="system-msg"></p>
+                                </li>
+                                <li class="form-item">
+                                    <label for="registration--password">Пароль</label>
+                                    <input type="password" id="registration--password">
+                                    <button class="login__password-show-btn"></button>
+                                    <p class="system-msg">Минимум 6 символов, не менее 1 цифры, хотя бы 1 символ с
+                                        верхним регистром</p>
+                                </li>
+                                <li class="form-item">
+                                    <label for="registration--promo">Промокод</label>
+                                    <input type="text" id="registration--promo" placeholder="Необязательный">
+                                </li>
+                                <li class="form-item login-terms">
+                                    <input type="checkbox" id="registration--terms">
+                                    <p class="system-msg">Я прочитал и согласен с&nbsp<a href="terms.html">Условиями и
+                                            положениями Royal Auction</a></p>
+                                </li>
+                            </ul>
+                            <button class="submit-btn is-disabled" disabled>Зарегистрироваться</button>
+                        </form>
+                        <form action="#" class="login__form is-active" id="login">
+                            <div class="login__form-heading">
+                                <h1 class="login__form-title">Вход</h1>
+                                <p class="login__form-subtitle">Нет аккаунта?<button
+                                        class="login__form-tab-btn" for="registration">Создать аккаунт</button>
+                                </p>
+                            </div>
+                            <ul class="login__form-items">
+                                <li class="form-item">
+                                    <label for="login--email">E-mail</label>
+                                    <input type="text" id="login--email">
+                                    <p class="system-msg"></p>
+                                </li>
+                                <li class="form-item">
+                                    <label for="login--password">Пароль</label>
+                                    <input type="password" id="login--password">
+                                    <button class="login__password-show-btn"></button>
+                                    <p class="system-msg"></p>
+                                </li>
+                            </ul>
+                            <button class="submit-btn is-disabled" disabled>Войти</button>
+                            <div>
+                                <div>
+                                    <button class="login__form-tab-btn" for="passwordrecovery" style="display: block; margin: 10px auto 0;">Забыли пароль?</button>
+                                </div>
+                            </div>
+                            </form>
+                        <form action="#" class="login__form" id="passwordrecovery">
+                            <div class="login__form-heading">
+                                <h1 class="login__form-title">Восстановить пароль</h1>
+                                <p class="login__form-subtitle">Есть аккаунт?<button
+                                        class="login__form-tab-btn" for="login">Войти</button>
+                                </p>
+                            </div>
+                            <ul class="login__form-items">
+                                <li class="form-item">
+                                    <label for="passwordrecovery--email">E-mail</label>
+                                    <input type="text" id="passwordrecovery--email">
+                                    <p class="system-msg"></p>
+                                </li>
+                            </ul>
+                            <button class="submit-btn is-disabled" disabled>Восстановить</button>
+                            <div class="passwordrecovery-approved-text">
+                                <h3>Письмо отправлено</h3>
+                                <br>
+                                <p>На адрес <span class="passwordrecovery-approved-email">email@example.com</span> выслана ссылка для восстановления пароля. Перейдите по ссылке и установите новый пароль.</p>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

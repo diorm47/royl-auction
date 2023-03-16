@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/notifications.css">
+    <title>Уведомления</title>
+</head>
+
+<body>
+    <div class="body__wrapper">
+        <div class="body">
+            <script src="./js/sidebar.js"></script>
+
+            <main class="main">
+                <script src="./js/header.js"></script>
+                <section class="page" id="notifications">
+                    <h1 class="page__heading">Новости</h1>
+                    <div class="notifications-wrapper">
+                        <article class="notifications-card-wrapper">
+                            <div class="notifications-card is-unread">
+                                <div class="notifications-card-img notifications-card-awardimg">
+                                    <p class="notifications-card-awardimg-name">iPhone 12 128Gb</p>
+                                    <img src="./img/awards/iphone12.png" alt="">
+                                </div>
+                                <div class="notifications-card-text">
+                                    <p class="notifications-card-title">Lorem Ipsum</p>
+                                    <p class="notifications-card-content">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit.
+                                        Mollitia numquam, eveniet odit voluptatum molestiae, natus aspernatur minima,
+                                        possimus
+                                        magni eos esse dolorum ullam aliquid fugit ut veritatis error atque? Accusamus.
+                                    </p>
+                                    <a href="lot.html" class="notifications-card-link">Перейти на страницу
+                                        лота ></a>
+                                </div>
+                                <p class="notifications-card-date">22/02/2023<br>23:34</p>
+                                <div class="unread"></div>
+                            </div>
+                        </article>
+                        <article class="notifications-card-wrapper">
+                            <div class="notifications-card">
+                                <div class="notifications-card-img">
+                                    <img src="./img/news.jpg" alt="">
+                                </div>
+                                <div class="notifications-card-text">
+                                    <p class="notifications-card-title">Lorem Ipsum</p>
+                                    <p class="notifications-card-content">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit.
+                                        Mollitia numquam, eveniet odit voluptatum molestiae, natus aspernatur minima,
+                                        possimus
+                                        magni eos esse dolorum ullam aliquid fugit ut veritatis error atque? Accusamus.
+                                        <br><br>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nam ipsa eum
+                                        ratione. Molestiae cum et officiis dignissimos aspernatur temporibus ex sint ad
+                                        dolor atque est tempore quas, impedit magnam.
+                                    </p>
+                                    <button class="notifications-card-spoiler">Развернуть</button>
+                                </div>
+                                <p class="notifications-card-date">22/02/2023<br>23:34</p>
+                            </div>
+                        </article>
+                        <article class="notifications-card-wrapper">
+                            <div class="notifications-card">
+                                <div class="notifications-card-img">
+                                    <img src="./img/news.jpg" alt="">
+                                </div>
+                                <div class="notifications-card-text">
+                                    <p class="notifications-card-title">Lorem Ipsum</p>
+                                    <p class="notifications-card-content">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit.
+                                        Mollitia numquam, eveniet odit voluptatum molestiae, natus aspernatur minima,
+                                        possimus
+                                        magni eos esse dolorum ullam aliquid fugit ut veritatis error atque? Accusamus.
+                                        <br><br>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nam ipsa eum
+                                        ratione. Molestiae cum et officiis dignissimos aspernatur temporibus ex sint ad
+                                        dolor atque est tempore quas, impedit magnam.
+                                        <br>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel veritatis doloribus
+                                        dolor? Libero sunt accusamus, non sint culpa rem fuga, quasi iste itaque
+                                        repellat dolorum reprehenderit, odio ad quos vel.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam incidunt, quas
+                                        totam ab a modi autem vero odit aut sunt, eligendi, expedita suscipit
+                                        consequatur recusandae harum optio dignissimos voluptatibus dolorem.
+                                    </p>
+                                    <button class="notifications-card-spoiler">Развернуть</button>
+                                </div>
+                                <p class="notifications-card-date">22/02/2023<br>23:34</p>
+                            </div>
+                        </article>
+                        <article class="notifications-card-wrapper">
+                            <div class="notifications-card">
+                                <div class="notifications-card-img">
+                                    <img src="./img/news.jpg" alt="">
+                                </div>
+                                <div class="notifications-card-text">
+                                    <p class="notifications-card-title">Lorem Ipsum</p>
+                                    <p class="notifications-card-content">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit.
+                                        Mollitia numquam, eveniet odit voluptatum molestiae, natus aspernatur minima,
+                                        possimus
+                                        magni eos esse dolorum ullam aliquid fugit ut veritatis error atque? Accusamus.
+                                        <br><br>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nam ipsa eum
+                                        ratione. Molestiae cum et officiis dignissimos aspernatur temporibus ex sint ad
+                                        dolor atque est tempore quas, impedit magnam.
+                                    </p>
+                                    <button class="notifications-card-spoiler">Развернуть</button>
+                                </div>
+                                <p class="notifications-card-date">22/02/2023<br>23:34</p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <script src="./js/footer.js"></script>
+            </main>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const spoilers = document.querySelectorAll('.notifications-card-spoiler');
+            spoilers.forEach(element => {
+                element.addEventListener("click", function (e) {
+                    e.target.classList.toggle('is-active');
+                    e.target.parentElement.querySelector('.notifications-card-content').classList.toggle('is-active');
+                });
+            });
+        });
+    </script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

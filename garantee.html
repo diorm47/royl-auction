@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Гарантия безопасности</title>
+    <style>
+        .row__col {
+            padding: 35px;
+            margin-bottom: 50px;
+        }
+
+        p,
+        strong {
+            line-height: 1.6;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.75)
+        }
+
+        strong {
+            display: inline-block;
+            font-weight: 400;
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .payservices {
+            display: flex;
+            justify-content: end;
+            margin-top: 30px;
+        }
+
+        .payservices img {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body__wrapper">
+        <div class="body">
+            <script src="./js/sidebar.js"></script>
+
+            <main class="main">
+                <script src="./js/header.js"></script>
+                <section class="page" id="garantee">
+                    <h1 class="page__heading">Гарантия безопасности</h1>
+
+                    <div class="row__col">
+                        <p><strong>Уважаемый клиент!</strong></p>
+                        <p>Вы можете оплатить свой заказ онлайн с помощью предложенных методов оплат через платежный
+                            сервис компании Uniteller. После подтверждения заказа Вы будете перенаправлены на защищенную
+                            платежную страницу Uniteller, где необходимо будет ввести данные для оплаты заказа. После
+                            успешной оплаты на указанную в форме оплаты электронную почту будет направлен электронный
+                            чек с информацией о заказе и данными по произведенной оплате.</p>
+                        <p><br></p>
+                        <p><strong>Гарантия безопасности</strong></p>
+                        <p>Безопасность процессинга Uniteller подтверждена сертификатом стандарта безопасности данных
+                            индустрии платежных карт PCI DSS. Надежность сервиса обеспечивается интеллектуальной
+                            системой мониторинга мошеннических операций, а также применением 3D Secure - современной
+                            технологией безопасности интернет-платежей.</p>
+                        <p>Данные Вашей карты вводятся на специальной защищенной платежной странице. Передача информации
+                            в процессинговую компанию Uniteller происходит с применением технологии шифрования TLS.
+                            Дальнейшая передача информации осуществляется по закрытым банковским каналам, имеющим
+                            наивысший уровень надежности.</p>
+                        <p>Uniteller не передает данные Вашей карты магазину и иным третьим лицам!</p>
+                        <p>Если Ваша карта поддерживает технологию 3D Secure, для осуществления платежа, Вам необходимо
+                            будет пройти дополнительную проверку пользователя в банке-эмитенте (банк, который выпустил
+                            Вашу карту). Для этого Вы будете направлены на страницу банка, выдавшего карту. Вид проверки
+                            зависит от банка. Как правило, это дополнительный пароль, который отправляется в SMS, карта
+                            переменных кодов, либо другие способы.</p>
+                        <p>Если у Вас возникли вопросы по совершенному платежу, Вы можете обратиться в службу
+                            технической поддержки процессингового центра Uniteller: <a data-fr-linked="true"
+                                href="mailto:support@uniteller.ru">support@uniteller.ru</a> или по телефону 8 800 707 67
+                            19.</p>
+
+
+                        <div class="payservices">
+                            <img src="./img/icons/visa.svg" alt="visa">
+                            <img src="./img/icons/mastercard.svg" alt="mastercard">
+                            <img src="./img/icons/mir.svg" alt="mir">
+                            <img src="./img/icons/uniteller.svg" alt="uniteller">
+                        </div>
+                    </div>
+                </section>
+
+                <script src="./js/footer.js"></script>
+            </main>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

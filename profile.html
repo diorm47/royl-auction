@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/profile.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <script src="./js/swiper-bundle.min.js"></script>
+    <title>Личный кабинет</title>
+  </head>
+
+  <body>
+    <div class="body__wrapper">
+      <div class="body">
+        <script src="./js/sidebar.js"></script>
+
+        <main class="main">
+          <script src="./js/header.js"></script>
+
+          <section class="page" id="profile">
+            <h1 class="page__heading">Профиль</h1>
+
+            <article class="row1">
+              <div class="row1__col1 row__col">
+                <div
+                  class="row1__col1__user-avatar-wrapper user-avatar-wrapper"
+                >
+                  <img src="./img/avatar.png" alt="Ava" class="user-avatar" />
+                </div>
+                <div class="row1__col1__user-info">
+                  <div class="status-label is-disabled">Не верифицирован</div>
+                  <p class="user-id">ID: 78950430</p>
+                </div>
+                <a href="settings.html" class="gray-btn">Настройки</a>
+              </div>
+              <div class="row1__col2 row__col">
+                <div class="donutchart-wrapper">
+                  <div class="donutchart-container">
+                    <div class="donutchart">
+                      <svg
+                        width="88"
+                        height="88"
+                        viewBox="0 0 88 88"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M85 44C85 66.6436 66.6437 85 44 85C21.3563 85 3 66.6436 3 44C3 21.3563 21.3563 3 44 3C66.6437 3 85 21.3563 85 44Z"
+                          stroke="white"
+                          stroke-opacity="0.07"
+                          stroke-width="6"
+                        />
+                        <mask id="path-2-inside-1_250_4571" fill="white">
+                          <path
+                            d="M44 2.96389C44 1.32698 45.3288 -0.0104026 46.962 0.0997242C56.5668 0.747377 65.6982 4.52971 72.9478 10.8634C74.1805 11.9404 74.1744 13.8256 73.0169 14.9831C71.8594 16.1406 69.9898 16.1305 68.7458 15.0665C62.6233 9.82978 54.9933 6.66931 46.9611 6.04302C45.3291 5.91577 44 4.6008 44 2.96389Z"
+                          />
+                        </mask>
+                        <path
+                          d="M44 2.96389C44 1.32698 45.3288 -0.0104026 46.962 0.0997242C56.5668 0.747377 65.6982 4.52971 72.9478 10.8634C74.1805 11.9404 74.1744 13.8256 73.0169 14.9831C71.8594 16.1406 69.9898 16.1305 68.7458 15.0665C62.6233 9.82978 54.9933 6.66931 46.9611 6.04302C45.3291 5.91577 44 4.6008 44 2.96389Z"
+                          stroke="#2F53FF"
+                          stroke-width="12"
+                          mask="url(#path-2-inside-1_250_4571)"
+                        />
+                      </svg>
+                      <div class="donutchart-text">10%</div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="row1__col2__user-verification"
+                  style="margin: 20px; flex: 1 1 auto"
+                >
+                  <p
+                    style="line-height: 1.1; display: flex; align-items: center"
+                  >
+                    Уровень авторизации
+                    <span class="tooltip">
+                      <span class="tooltip-text"
+                        >Краткое пояснение к<br />какому-либо элементу.<br />Использовать
+                        тег br.
+                      </span>
+                    </span>
+                  </p>
+                  <div
+                    class="line-separator"
+                    style="width: 50%; margin: 10px 0"
+                  ></div>
+                  <p
+                    style="
+                      font-size: 12px;
+                      font-weight: 300;
+                      color: #ff0f0f;
+                      white-space: nowrap;
+                    "
+                  >
+                    Не верифицирован!
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="row2">
+              <div class="row2__col1">
+                <div class="row2__col1__checklist-visual">
+                  <p style="font-size: 20px; margin-bottom: 20px">Чек-лист ></p>
+                  <p
+                    style="
+                      font-weight: 300;
+                      font-size: 12px;
+                      line-height: 16.8px;
+                      margin-bottom: 2px;
+                    "
+                  >
+                    Прежде чем ты начнёшь учавствовать <br />
+                  </p>
+                  <p
+                    style="
+                      font-weight: 300;
+                      font-size: 12px;
+                      line-height: 16.8px;
+                    "
+                  >
+                    в аукционе, выполни все задания:
+                  </p>
+                  <div class="row2__col1__checklist-img">
+                    <img src="./img/checklist.png" alt="" />
+                  </div>
+                  <div class="row2__col1__checklist-award-info">
+                    <div class="row2__col1__checklist-award">+50 ROTO</div>
+                    <p class="row2__col1__checklist-award-text">
+                      За каждое выполненное задание
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row2__col2 middle">
+                <ul class="row2__col2__checklist" data-slider="itc-slider">
+                  <div class="profile-slide">
+                    <li class="row2__col2__checklist-item is-checked">
+                      <img
+                        src="./img/icons/checkboxes/ch1.svg"
+                        class="row2__col2__checklist-item-img"
+                      />
+                      <div class="row2__col2__checklist-item-text">
+                        <p>Изучите информацию</p>
+                        <br />
+                        <a href="##" class="row2__col2__checklist-item-link">
+                          о проекте
+                        </a>
+                      </div>
+                    </li>
+                    <li class="row2__col2__checklist-item">
+                      <img
+                        src="./img/icons/checkboxes/ch2.svg"
+                        class="row2__col2__checklist-item-img"
+                      />
+                      <div class="row2__col2__checklist-item-text">
+                        <p>Пройдите верификацию аккаунта</p>
+                        <br />
+                        <a href="##" class="row2__col2__checklist-item-link">
+                          на странице профиля
+                        </a>
+                      </div>
+                    </li>
+                    <li class="row2__col2__checklist-item">
+                      <img
+                        src="./img/icons/checkboxes/ch3.svg"
+                        class="row2__col2__checklist-item-img"
+                      />
+                      <div class="row2__col2__checklist-item-text">
+                        <p>Подпишитесь на официальный аккаунт в</p>
+                        <br />
+                        <a href="##" class="row2__col2__checklist-item-link">
+                          Instagram
+                        </a>
+                      </div>
+                    </li>
+                    <li class="row2__col2__checklist-item">
+                      <img
+                        src="./img/icons/checkboxes/ch4.svg"
+                        class="row2__col2__checklist-item-img"
+                      />
+                      <div class="row2__col2__checklist-item-text">
+                        <p>Подпишитесь на официальный</p>
+                        <br />
+                        <a href="##" class="row2__col2__checklist-item-link">
+                          telegram канал
+                        </a>
+                      </div>
+                    </li>
+                    <li class="row2__col2__checklist-item">
+                      <img
+                        src="./img/icons/checkboxes/ch5.svg"
+                        class="row2__col2__checklist-item-img"
+                      />
+                      <div class="row2__col2__checklist-item-text">
+                        <p>Подключите</p>
+                        <a href="##" class="row2__col2__checklist-item-link">
+                          telegram bot </a
+                        ><br />
+                        <p>для получения уведомлений</p>
+                      </div>
+                    </li>
+                  </div>
+                  <div class="profile-slide">
+                    <li class="row2__col2__checklist-item">
+                      <img
+                        src="./img/icons/checkboxes/ch6.svg"
+                        class="row2__col2__checklist-item-img"
+                      />
+                      <div class="row2__col2__checklist-item-text">
+                        <p>Ознакомьтесь с</p>
+                        <br />
+                        <a href="##" class="row2__col2__checklist-item-link">
+                          лентой победителей
+                        </a>
+                      </div>
+                    </li>
+                    <li class="row2__col2__checklist-item">
+                      <img
+                        src="./img/icons/checkboxes/ch7.svg"
+                        class="row2__col2__checklist-item-img"
+                      />
+                      <div class="row2__col2__checklist-item-text">
+                        <p>Изучите</p>
+                        <a href="##" class="row2__col2__checklist-item-link">
+                          тактику победы </a
+                        ><br />
+                        <p>в аукционах</p>
+                      </div>
+                    </li>
+                    <li class="row2__col2__checklist-item">
+                      <img
+                        src="./img/icons/checkboxes/ch8.svg"
+                        class="row2__col2__checklist-item-img"
+                      />
+                      <div class="row2__col2__checklist-item-text">
+                        <p>Выберите и оплатите</p>
+                        <br />
+                        <a href="##" class="row2__col2__checklist-item-link">
+                          пакет токенов </a
+                        ><br />
+                        <p>для участия в аукционах</p>
+                      </div>
+                    </li>
+                    <li class="row2__col2__checklist-item">
+                      <img
+                        src="./img/icons/checkboxes/ch9.svg"
+                        class="row2__col2__checklist-item-img"
+                      />
+                      <div class="row2__col2__checklist-item-text">
+                        <p>Выберите</p>
+                        <a href="##" class="row2__col2__checklist-item-link">
+                          аукцион </a
+                        ><br />
+                        <p>и примите в нем участие</p>
+                      </div>
+                    </li>
+                    <li class="row2__col2__checklist-item">
+                      <img
+                        src="./img/icons/checkboxes/ch10.svg"
+                        class="row2__col2__checklist-item-img"
+                      />
+                      <div class="row2__col2__checklist-item-text">
+                        <p>Вступите в</p>
+                        <a href="##" class="row2__col2__checklist-item-link">
+                          чат игроков
+                        </a>
+                      </div>
+                    </li>
+                  </div>
+                  <div class="profile-slide">
+                    <li class="row2__col2__checklist-item">
+                      <img
+                        src="./img/icons/checkboxes/ch11.svg"
+                        class="row2__col2__checklist-item-img"
+                      />
+                      <div class="row2__col2__checklist-item-text">
+                        <p>Ознакомьтесь с условиями</p>
+                        <br />
+                        <a href="##" class="row2__col2__checklist-item-link">
+                          партнерской программы
+                        </a>
+                      </div>
+                    </li>
+                    <li class="row2__col2__checklist-item">
+                      <img
+                        src="./img/icons/checkboxes/ch12.svg"
+                        class="row2__col2__checklist-item-img"
+                      />
+                      <div class="row2__col2__checklist-item-text">
+                        <p>Вступите в</p>
+                        <a href="##" class="row2__col2__checklist-item-link">
+                          чат партнёров
+                        </a>
+                      </div>
+                    </li>
+                    <li class="row2__col2__checklist-item">
+                      <img
+                        src="./img/icons/checkboxes/ch13.svg"
+                        class="row2__col2__checklist-item-img"
+                      />
+                      <div class="row2__col2__checklist-item-text">
+                        <p>Порекомендуйте участие в аукционе в</p>
+                        <br />
+                        <a href="##" class="row2__col2__checklist-item-link">
+                          социальных сетях
+                        </a>
+                      </div>
+                    </li>
+                    <li class="row2__col2__checklist-item">
+                      <img
+                        src="./img/icons/checkboxes/ch14.svg"
+                        class="row2__col2__checklist-item-img"
+                      />
+                      <div class="row2__col2__checklist-item-text">
+                        <p>Выведите</p>
+                        <br />
+                        <a href="##" class="row2__col2__checklist-item-link">
+                          партнёрские вознаграждения
+                        </a>
+                      </div>
+                    </li>
+                  </div>
+                </ul>
+              </div>
+            </article>
+
+            <article class="row3">
+              <div class="row3__col1 row3__col row__col">
+                <div class="row3__col1-top">
+                  <p class="row3__white-p">
+                    Число моих аукционов <span class="row3__number">12</span>
+                  </p>
+                  <br />
+                  <div class="line-separator"></div>
+                </div>
+                <div class="row3__col1-awards">
+                  <div class="row3__card">
+                    <p class="row3__card-name">iPhone 12 128Gb</p>
+                    <div class="row3__card-img">
+                      <img src="./img/awards/iphone12.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="row3__card">
+                    <p class="row3__card-name">Apple Watch SE</p>
+                    <div class="row3__card-img">
+                      <img src="./img/awards/applewatch.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="row3__card">
+                    <p class="row3__card-name">Кольцо Cartier</p>
+                    <div class="row3__card-img">
+                      <img src="./img/awards/ring.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="row3__card">
+                    <p class="row3__card-name">MacBook Pro 2017 265Gb 8Gb</p>
+                    <div class="row3__card-img">
+                      <img src="./img/awards/macbook.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <a href="##" class="row3__gray-a">Увидеть все ></a>
+              </div>
+              <div class="row3__col2 row3__col row__col custom_second">
+                <div class="row3__col2-text">
+                  <p class="row3__white-p">
+                    <span class="row3__number">5</span><br /><br />Выйгранных
+                    аукционов<br /><br />
+                  </p>
+                  <a href="##" class="row3__gray-a">Увидеть все ></a>
+                </div>
+                <div class="row3__col2-awards">
+                  <div class="row3__card">
+                    <p class="row3__card-name">iPhone 12 128Gb</p>
+                    <div class="row3__card-img">
+                      <img src="./img/awards/iphone12.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="row3__card">
+                    <p class="row3__card-name">Apple Watch SE</p>
+                    <div class="row3__card-img">
+                      <img src="./img/awards/applewatch.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="row3__card">
+                    <p class="row3__card-name">Кольцо Cartier</p>
+                    <div class="row3__card-img">
+                      <img src="./img/awards/ring.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="row3__card">
+                    <p class="row3__card-name">MacBook Pro 2017 265Gb 8Gb</p>
+                    <div class="row3__card-img">
+                      <img src="./img/awards/macbook.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mobile_winned_aucksions swiper">
+                  <div class="mobile_winned swiper-wrapper">
+                    <div class="row3__card swiper-slide">
+                      <p class="row3__card-name">iPhone 12 128Gb</p>
+                      <div class="row3__card-img">
+                        <img src="./img/awards/iphone12.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="row3__card swiper-slide">
+                      <p class="row3__card-name">MacBook Pro 2017 265Gb 8Gb</p>
+                      <div class="row3__card-img">
+                        <img src="./img/awards/macbook.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="row3__card swiper-slide">
+                      <p class="row3__card-name">Кольцо Cartier</p>
+                      <div class="row3__card-img">
+                        <img src="./img/awards/ring.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="row3__card swiper-slide">
+                      <p class="row3__card-name">iPhone 12 128Gb</p>
+                      <div class="row3__card-img">
+                        <img src="./img/awards/iphone12.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mobile_winned_aucksions_pagination"></div>
+                </div>
+
+
+                
+              </div>
+              <div class="row3__col3 row3__col row__col">
+                <p class="row3__number">10</p>
+                <p class="row3__white-p">Потрачено ROTO</p>
+              </div>
+              <div class="row3__col4 row3__col row__col">
+                <p class="row3__number">400 000 р.</p>
+                <p class="row3__white-p">Сумма выйгрышей</p>
+              </div>
+            </article>
+
+            <article class="row4">
+              <div class="row4__col1 row__col">
+                <div class="donutchart-wrapper">
+                  <div class="donutchart-heading">
+                    <p>
+                      Мои игроки <span><span>243</span> всего</span>
+                    </p>
+                    <br /><br />
+                    <div class="line-separator"></div>
+                  </div>
+                  <div class="donutchart-content">
+                    <ul class="donutchart-ul">
+                      <li class="donutchart-ul-item">
+                        <div class="donutchart-ul-item-text">
+                          <p class="donutchart-ul-item-number">43</p>
+                          <p class="donutchart-ul-item-description">
+                            Число моих партнёров
+                          </p>
+                        </div>
+                      </li>
+                      <li class="donutchart-ul-item">
+                        <div class="donutchart-ul-item-text">
+                          <p class="donutchart-ul-item-number">4</p>
+                          <p class="donutchart-ul-item-description">
+                            Число активных партнёров
+                          </p>
+                        </div>
+                      </li>
+                      <li class="donutchart-ul-item">
+                        <div class="donutchart-ul-item-text">
+                          <p class="donutchart-ul-item-number">243</p>
+                          <p class="donutchart-ul-item-description">
+                            Общее число моих игроков
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="donutchart-container">
+                      <div class="donutchart">
+                        <svg
+                          width="185"
+                          height="183"
+                          viewBox="0 0 185 183"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M118.778 15.3902C120.781 9.61166 117.693 3.24043 111.707 1.98763C100.525 -0.352631 88.9664 -0.635559 77.6204 1.18759C62.6068 3.6001 48.4284 9.62589 36.341 18.7312C24.2537 27.8365 14.6305 39.7403 8.324 53.3882C2.01746 67.036 -0.77782 82.0067 0.18577 96.974C1.14936 111.941 5.84207 126.443 13.8482 139.196C21.8544 151.948 32.9269 162.556 46.0849 170.082C59.2429 177.607 74.0804 181.818 89.2829 182.339C100.753 182.733 112.165 181.017 122.942 177.314C128.744 175.321 131.009 168.587 128.276 163.095C125.586 157.689 119.06 155.546 113.285 157.311C105.796 159.6 97.9457 160.643 90.0583 160.372C78.5198 159.976 67.2585 156.781 57.2718 151.069C47.2851 145.358 38.8813 137.306 32.8047 127.627C26.7282 117.948 23.1665 106.942 22.4351 95.5817C21.7038 84.2217 23.8254 72.8593 28.6119 62.5008C33.3985 52.1423 40.7023 43.1076 49.8763 36.1968C59.0504 29.286 69.8116 24.7125 81.2067 22.8815C88.9952 21.63 96.9156 21.6861 104.637 23.0223C110.59 24.0525 116.799 21.0983 118.778 15.3902Z"
+                            fill="white"
+                            fill-opacity="0.12"
+                          />
+                          <path
+                            d="M119.432 167.442C121.364 172.912 127.378 175.857 132.619 173.37C141.198 169.299 149.107 163.937 156.055 157.459C165.552 148.605 173.038 137.866 178.02 125.952C183.001 114.037 185.364 101.217 184.954 88.3366C184.544 75.4559 181.37 62.8072 175.641 51.2241C169.912 39.641 161.758 29.3865 151.716 21.1366C141.674 12.8867 129.973 6.82873 117.384 3.36192C104.795 -0.104889 91.6032 -0.901781 78.6788 1.02377C69.3137 2.41905 60.2429 5.22082 51.7766 9.31362C46.4591 11.8842 45.0441 18.5753 48.275 23.5195C51.4473 28.3742 57.9102 29.6955 63.2069 27.334C69.133 24.6918 75.4141 22.8571 81.8777 21.8941C91.8108 20.4142 101.949 21.0267 111.625 23.6911C121.3 26.3555 130.293 31.0114 138.011 37.3519C145.728 43.6924 151.995 51.5735 156.398 60.4757C160.802 69.378 163.241 79.0992 163.556 88.9986C163.871 98.8981 162.055 108.751 158.226 117.908C154.398 127.065 148.645 135.318 141.346 142.123C136.643 146.508 131.367 150.227 125.671 153.189C120.46 155.9 117.475 161.904 119.432 167.442Z"
+                            fill="#2F53FF"
+                          />
+                          <path
+                            d="M169.224 118.307C174.957 120.333 181.324 117.368 182.692 111.444C186.13 96.5547 185.734 80.9904 181.455 66.193C176.155 47.8654 165.165 31.6352 150.028 19.7826C134.891 7.93002 116.368 1.05063 97.0611 0.110886C81.4876 -0.647141 66.0354 2.4903 52.1144 9.15102C46.5912 11.7937 45.1258 18.7332 48.4762 23.858C51.766 28.8901 58.4663 30.2538 63.9739 27.8433C73.9794 23.4642 84.933 21.4286 95.9667 21.9657C110.641 22.6799 124.72 27.9087 136.225 36.9175C147.73 45.9262 156.084 58.2622 160.112 72.1924C163.099 82.5237 163.597 93.3467 161.632 103.812C160.496 109.864 163.418 116.256 169.224 118.307Z"
+                            fill="#00FFA3"
+                          />
+                        </svg>
+                        <div class="donutchart-text">243</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row4__col2 row__col">
+                <div class="barchart-wrapper">
+                  <div class="barchart-nav">
+                    <p class="barchart-nav-title">Прибыль</p>
+
+                    <div class="barchart-nav-radio">
+                      <input
+                        type="radio"
+                        name="currency"
+                        value="roto"
+                        checked
+                        class="barchart-nav-radio-btn currency--roto"
+                      />
+                      <label class="barchart-nav-radio-label">ROTO</label>
+                    </div>
+                    <div class="barchart-nav-radio">
+                      <input
+                        type="radio"
+                        name="currency"
+                        value="rubble"
+                        class="barchart-nav-radio-btn currency--rubble"
+                      />
+                      <label class="barchart-nav-radio-label">Рубли</label>
+                    </div>
+                  </div>
+                  <div class="line-separator"></div>
+                  <div class="barchart-heading">
+                    <p class="barchart-heading-legend"></p>
+                    <select class="barchart-nav-select">
+                      <option value="week" class="barchart-nav-option">
+                        За последнюю неделю
+                      </option>
+                      <option value="month" class="barchart-nav-option">
+                        За последний месяц
+                      </option>
+                    </select>
+                  </div>
+                  <div class="barchart"></div>
+                  <p class="barchart-heading-total">
+                    <span
+                      >Всего заработано за <br />
+                      период:
+                    </span>
+                    <span class="barchart-heading-total-span">11700</span>
+                  </p>
+                </div>
+              </div>
+              <!-- <div class="row4__col2 row__col">
+                            <div class="barchart-wrapper">
+                                <div class="barchart-nav">
+                                    <p class="barchart-nav-title">Прибыль</p>
+                                    <select class="barchart-nav-select">
+                                        <option value="week" class="barchart-nav-option">За последнюю неделю</option>
+                                        <option value="month" class="barchart-nav-option">За последний месяц</option>
+                                    </select>
+                                    <div class="barchart-nav-radio">
+                                        <input type="radio" name="currency" value="roto" checked
+                                            class="barchart-nav-radio-btn currency--roto" >
+                                        <label class="barchart-nav-radio-label">ROTO</label>
+                                    </div>
+                                    <div class="barchart-nav-radio">
+                                        <input type="radio" name="currency" value="rubble"
+                                            class="barchart-nav-radio-btn currency--rubble">
+                                        <label class="barchart-nav-radio-label">Рубли</label>
+                                    </div>
+                                </div>
+                                <div class="line-separator"></div>
+                                <div class="barchart-heading">
+                                    <p class="barchart-heading-legend"></p>
+                                    <p class="barchart-heading-total">Всего заработано за период: <span
+                                            class="barchart-heading-total-span"></span></p>
+                                </div>
+                                <div class="barchart">
+                                </div>
+                            </div>
+                        </div> -->
+            </article>
+          </section>
+
+          <script src="./js/footer.js"></script>
+        </main>
+      </div>
+    </div>
+
+    <script src="./js/itc__slider.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery-3.6.2.min.js"></script>
+    <script src="./js/profile.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var checkbox_items = document.querySelectorAll(
+          ".row2__col2__checklist-item"
+        );
+        checkbox_items.forEach((element) => {
+          if (element.classList.contains("is-checked"))
+            element.querySelector(".row2__col2__checklist-item-img").src =
+              "./img/icons/checkboxes/checked.svg";
+        });
+      });
+    </script>
+  </body>
+</html>

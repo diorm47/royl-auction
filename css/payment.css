@@ -1,0 +1,105 @@
+.row1 {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  margin: -15px -15px 60px;
+}
+.row1__col1 {
+  flex: 1 1 70%;
+  margin: 15px;
+  background: #171a1e radial-gradient(at right 40%, rgba(75, 115, 255, 0.1) 0%, rgba(0, 0, 0, 0) 60%) !important;
+}
+.row1__col2 {
+  position: relative;
+  flex: 1 1 25%;
+  margin: 15px;
+}
+.row1__col2 .row__col__content {
+  display: flex;
+}
+.row1__col2 .progress-step {
+  padding-bottom: 50px;
+}
+.row1__col2 .progress-step:not(.row1__col2 .progress-step:last-child) .progress-step-heading:after {
+  border: 1px solid #2F53FF;
+}
+.row1__col2 .progress-step:last-child .progress-step-heading:before {
+  width: 11px;
+  height: 11px;
+  left: -31px;
+  border: 2.5px solid #231F20;
+  outline: 2px solid #2F53FF;
+  background: #2F53FF;
+}
+.row1__col2 .progress-step-heading {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.row1__col2 .progress-step-heading:before {
+  border-radius: 50%;
+  border: 4px solid #2F53FF;
+}
+.row1 .line-separator {
+  margin: 30px 0;
+}
+
+p {
+  line-height: 1.5 !important;
+}
+
+.row__col {
+  padding: 30px 35px !important;
+}
+.row__col__heading {
+  font-weight: 700;
+  font-size: 22px;
+}
+.row__col__paragraph {
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.75);
+}
+.row__col__tip {
+  font-weight: 300;
+  font-size: 12px;
+  color: #717273;
+  margin-top: 15px;
+}
+.row__col__img {
+  margin-right: 15px;
+}
+.row__col__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.row__col__block {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row__col__block-visual {
+  flex: 1 1 35%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  margin-left: auto;
+  align-self: end;
+}
+.row__col__block-text {
+  flex: 1 1 50%;
+  margin-right: 20px;
+}
+
+@media (max-width: 1023px) {
+  .row__col__img__creditcard {
+    margin: 0 auto;
+  }
+  .row__col__block-visual {
+    margin: 30px 0;
+  }
+  .row__col__block-text {
+    flex: 0 0 100%;
+    margin-right: 0;
+  }
+}
