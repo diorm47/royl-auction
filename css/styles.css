@@ -547,7 +547,7 @@ h6 {
   display: flex;
   flex-direction: column;
   max-width: calc(100vw + 150px);
-  max-height: 320px;
+  max-height: 380px;
   overflow: auto;
   scrollbar-width: thin;
   scrollbar-color: #a9a9a9 #2f3032;
@@ -804,17 +804,9 @@ h6 {
   border: 8px solid;
   margin-right: 8px;
 }
-.barchart-heading-total {
-  position: absolute;
-  left: 43px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  right: 39px;
-}
+
 .barchart-heading-total, .barchart-heading-total span {
   color: #f2ae14;
-  bottom: 6px;
 }
 
 @media (max-width: 1279px) {

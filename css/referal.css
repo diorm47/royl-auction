@@ -246,7 +246,7 @@
 }
 .row5__col3__list {
   margin: auto 0;
-  max-height: 500px;
+  max-height: 800px;
 }
 .row5__col3__list-item {
   display: flex;
@@ -437,5 +437,7 @@
   }
   .barchart-heading-total {
     margin-bottom: -20px;
+  
   }
+
 }
