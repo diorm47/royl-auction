@@ -226,9 +226,11 @@
   flex: 1 1 100%;
   margin: 10px;
 }
-.row5__col1 .barchart-nav-radio,
-.row5__col2 .barchart-nav-radio {
-  display: none;
+.hide_bar .barchart-nav-radio,
+.swiper-slide .barchart-nav-radio {
+ position: absolute;
+ z-index: -2;
+ visibility: hidden;
 }
 .row5__cols12 {
   display: flex;
@@ -327,7 +329,7 @@
 .mobile_row5__cols12_pagination {
   width: auto !important;
   position: absolute;
-  bottom:10px !important;
+  bottom:58px !important;
   left: 50% !important;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);

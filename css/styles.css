@@ -6,23 +6,31 @@
   border: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
-:focus, :active {
+:focus,
+:active {
   outline: none;
 }
 
-a:focus, a:active {
+a:focus,
+a:active {
   outline: none;
 }
 
-nav, footer, header, aside {
+nav,
+footer,
+header,
+aside {
   display: block;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -33,7 +41,9 @@ html, body {
   -webkit-text-size-adjust: 100%;
 }
 
-input, button, textarea {
+input,
+button,
+textarea {
   font-family: inherit;
 }
 
@@ -50,7 +60,8 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
   color: inherit;
 }
@@ -67,7 +78,12 @@ img {
   vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit;
   font-weight: 400;
 }
@@ -141,7 +157,8 @@ h6 {
 }
 
 .modal {
-  background: #121416 radial-gradient(circle, rgba(75, 115, 255, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+  background: #121416
+    radial-gradient(circle, rgba(75, 115, 255, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
   box-shadow: 0px 4px 20px #000000;
   border-radius: 15px;
   display: flex;
@@ -163,7 +180,7 @@ h6 {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .modal-title {
   font-size: 28px;
@@ -201,7 +218,7 @@ h6 {
   content: "Далее >";
   display: block;
 }
-.modal-nextel[aria-disabled=true]:before {
+.modal-nextel[aria-disabled="true"]:before {
   content: "Прекрасно!";
   display: block;
 }
@@ -242,7 +259,7 @@ h6 {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .logo-text {
   text-transform: uppercase;
@@ -270,7 +287,8 @@ h6 {
   box-shadow: 0px 4px 15px -2px rgba(47, 82, 255, 0.7411764706) !important;
   color: #fff;
 }
-.submit-btn.is-active, .submit-btn[aria-disabled=false] {
+.submit-btn.is-active,
+.submit-btn[aria-disabled="false"] {
   border: 1px solid rgba(255, 255, 255, 0.4);
   background: none;
 }
@@ -330,7 +348,7 @@ h6 {
 }
 
 .page__tab-btn {
-  color: #5E6467;
+  color: #5e6467;
   background: none;
   padding: 12px 25px;
   margin: 10px;
@@ -424,7 +442,7 @@ h6 {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .list-p {
@@ -469,20 +487,20 @@ h6 {
 .tooltip:hover .tooltip-text {
   visibility: visible;
   -webkit-appearance: auto;
-          appearance: auto;
+  appearance: auto;
   opacity: 1;
 }
 .tooltip-text {
   transition: 0.3s ease;
   visibility: hidden;
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   opacity: 0;
   position: absolute;
   bottom: calc(100% + 10px);
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   display: inline-block;
   background: rgb(50, 53, 61);
   padding: 11px;
@@ -492,7 +510,7 @@ h6 {
   line-height: 1.2;
   color: rgba(255, 255, 255, 0.85);
   -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.4));
-          filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.4));
   white-space: nowrap;
 }
 .tooltip-text:before {
@@ -501,7 +519,7 @@ h6 {
   left: 50%;
   top: calc(100% - 1px);
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   border-top: 10px solid rgba(50, 53, 61, 0.85);
   border-right: 10px solid transparent;
   border-left: 10px solid transparent;
@@ -621,7 +639,8 @@ h6 {
 .partner-table-td--user-info {
   margin-left: 20px;
 }
-.partner-table-td--regdate-days, .partner-table-td--regdate-time {
+.partner-table-td--regdate-days,
+.partner-table-td--regdate-time {
   color: rgba(255, 255, 255, 0.4);
   font-size: 10px;
 }
@@ -690,7 +709,7 @@ h6 {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   color: #fff;
 }
 
@@ -764,7 +783,7 @@ h6 {
   left: -20px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   border: 2px solid #000;
   border-radius: 5px;
 }
@@ -773,15 +792,20 @@ h6 {
   width: 0px;
 }
 .barchart-nav-radio-btn.currency--roto + label:before {
-  -webkit-filter: invert(27%) sepia(94%) saturate(4436%) hue-rotate(230deg) brightness(102%) contrast(102%);
-          filter: invert(27%) sepia(94%) saturate(4436%) hue-rotate(230deg) brightness(102%) contrast(102%);
+  -webkit-filter: invert(27%) sepia(94%) saturate(4436%) hue-rotate(230deg)
+    brightness(102%) contrast(102%);
+  filter: invert(27%) sepia(94%) saturate(4436%) hue-rotate(230deg)
+    brightness(102%) contrast(102%);
 }
 .barchart-nav-radio-btn.currency--rubble + label:before {
-  -webkit-filter: invert(72%) sepia(91%) saturate(1535%) hue-rotate(101deg) brightness(103%) contrast(101%);
-          filter: invert(72%) sepia(91%) saturate(1535%) hue-rotate(101deg) brightness(103%) contrast(101%);
+  -webkit-filter: invert(72%) sepia(91%) saturate(1535%) hue-rotate(101deg)
+    brightness(103%) contrast(101%);
+  filter: invert(72%) sepia(91%) saturate(1535%) hue-rotate(101deg)
+    brightness(103%) contrast(101%);
 }
 .barchart-nav-radio-btn:checked + label:before {
-  background: url(../img/icons/checkboxes/checkmark.svg) center/contain no-repeat;
+  background: url(../img/icons/checkboxes/checkmark.svg) center/contain
+    no-repeat;
 }
 .barchart-heading {
   display: flex;
@@ -805,7 +829,8 @@ h6 {
   margin-right: 8px;
 }
 
-.barchart-heading-total, .barchart-heading-total span {
+.barchart-heading-total,
+.barchart-heading-total span {
   color: #f2ae14;
 }
 
@@ -824,8 +849,6 @@ h6 {
     left: 0;
     margin-bottom: 20px;
   }
-
- 
 }
 @media (max-width: 424px) {
   .main {
@@ -903,17 +926,20 @@ h6 {
   color: #fff;
 }
 .sidebar__menu-item.is-active .sidebar__menu-item-icon > img {
-  -webkit-filter: invert(75%) sepia(81%) saturate(4387%) hue-rotate(229deg) brightness(100%) contrast(100%);
-          filter: invert(75%) sepia(81%) saturate(4387%) hue-rotate(229deg) brightness(100%) contrast(100%);
+  -webkit-filter: invert(75%) sepia(81%) saturate(4387%) hue-rotate(229deg)
+    brightness(100%) contrast(100%);
+  filter: invert(75%) sepia(81%) saturate(4387%) hue-rotate(229deg)
+    brightness(100%) contrast(100%);
 }
 .sidebar__menu-item:hover {
   background: #2f53ff;
 }
 .sidebar__menu-item:hover .sidebar__menu-item-icon > img {
   -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
-.sidebar__menu-item.is-hascounter > .counter, .sidebar__menu-item.is-unread > .unread {
+.sidebar__menu-item.is-hascounter > .counter,
+.sidebar__menu-item.is-unread > .unread {
   display: block;
 }
 .sidebar__menu-item-icon {
@@ -925,7 +951,7 @@ h6 {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .sidebar__referal-btn {
   display: flex;
@@ -935,7 +961,11 @@ h6 {
   font-size: 16px;
   padding: 15px;
   color: #fff;
-  background: radial-gradient(84.8% 2249.89% at 50% 50%, rgba(47, 83, 255, 0.3) 0%, rgba(47, 83, 255, 0) 100%);
+  background: radial-gradient(
+    84.8% 2249.89% at 50% 50%,
+    rgba(47, 83, 255, 0.3) 0%,
+    rgba(47, 83, 255, 0) 100%
+  );
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
   border-radius: 7px;
 }
@@ -948,13 +978,13 @@ h6 {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   -webkit-filter: invert(1);
-          filter: invert(1);
+  filter: invert(1);
 }
 .sidebar.is-collapsed {
   -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  transform: translateX(100%);
 }
 
 @media (max-width: 1279px) {
@@ -989,17 +1019,19 @@ h6 {
   align-items: center;
   margin: 0 0 0 30px;
 }
-.header__menu-item-img, .header__menu-item#header__menu-link--language {
+.header__menu-item-img,
+.header__menu-item#header__menu-link--language {
   width: 25px;
   height: 25px;
   border-radius: 50%;
   overflow: hidden;
 }
-.header__menu-item-img img, .header__menu-item#header__menu-link--language img {
+.header__menu-item-img img,
+.header__menu-item#header__menu-link--language img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .header__menu-item#header__menu-link--notifications {
   width: 25px !important;
@@ -1028,10 +1060,12 @@ h6 {
 .header__menu-item#header__menu-link--notifications .tooltip-text:hover {
   visibility: visible;
   -webkit-appearance: auto;
-          appearance: auto;
+  appearance: auto;
   opacity: 1;
 }
-.header__menu-item#header__menu-link--notifications .tooltip-text .tooltip-content {
+.header__menu-item#header__menu-link--notifications
+  .tooltip-text
+  .tooltip-content {
   max-height: 100%;
   max-width: 100%;
   overflow-y: scroll;
@@ -1041,51 +1075,83 @@ h6 {
   scrollbar-width: thin;
   scrollbar-color: #a9a9a9 #2f3032;
 }
-.header__menu-item#header__menu-link--notifications .tooltip-text .tooltip-content::-webkit-scrollbar {
+.header__menu-item#header__menu-link--notifications
+  .tooltip-text
+  .tooltip-content::-webkit-scrollbar {
   width: 5px;
   height: 5px;
 }
-.header__menu-item#header__menu-link--notifications .tooltip-text .tooltip-content::-webkit-scrollbar-track {
+.header__menu-item#header__menu-link--notifications
+  .tooltip-text
+  .tooltip-content::-webkit-scrollbar-track {
   background: #2f3032;
 }
-.header__menu-item#header__menu-link--notifications .tooltip-text .tooltip-content::-webkit-scrollbar-thumb {
+.header__menu-item#header__menu-link--notifications
+  .tooltip-text
+  .tooltip-content::-webkit-scrollbar-thumb {
   background-color: #bbbbbb;
   border-radius: 10px;
   border: 0px none #000000;
 }
-.header__menu-item#header__menu-link--notifications .tooltip-text .tooltip-content .line-separator {
+.header__menu-item#header__menu-link--notifications
+  .tooltip-text
+  .tooltip-content
+  .line-separator {
   margin: 15px 0;
 }
-.header__menu-item#header__menu-link--notifications .tooltip-text .tooltip-content .tooltip-notification {
+.header__menu-item#header__menu-link--notifications
+  .tooltip-text
+  .tooltip-content
+  .tooltip-notification {
   position: relative;
   display: flex;
   align-items: center;
 }
-.header__menu-item#header__menu-link--notifications .tooltip-text .tooltip-content .tooltip-notification.is-unread .unread {
+.header__menu-item#header__menu-link--notifications
+  .tooltip-text
+  .tooltip-content
+  .tooltip-notification.is-unread
+  .unread {
   display: block;
   position: absolute;
   width: 7px;
   height: 7px;
   right: 0;
 }
-.header__menu-item#header__menu-link--notifications .tooltip-text .tooltip-content .tooltip-notification.is-unread .tooltip-notification-title {
+.header__menu-item#header__menu-link--notifications
+  .tooltip-text
+  .tooltip-content
+  .tooltip-notification.is-unread
+  .tooltip-notification-title {
   color: #2f53ff;
 }
-.header__menu-item#header__menu-link--notifications .tooltip-text .tooltip-content .tooltip-notification-text {
+.header__menu-item#header__menu-link--notifications
+  .tooltip-text
+  .tooltip-content
+  .tooltip-notification-text {
   margin-left: 15px;
 }
-.header__menu-item#header__menu-link--notifications .tooltip-text .tooltip-content .tooltip-notification-title {
+.header__menu-item#header__menu-link--notifications
+  .tooltip-text
+  .tooltip-content
+  .tooltip-notification-title {
   font-weight: 500;
   font-size: 14px;
 }
-.header__menu-item#header__menu-link--notifications .tooltip-text .tooltip-content .tooltip-notification-date {
+.header__menu-item#header__menu-link--notifications
+  .tooltip-text
+  .tooltip-content
+  .tooltip-notification-date {
   font-weight: 300;
   margin-top: 10px;
   font-size: 11px;
   line-height: 1.3;
   color: rgba(255, 255, 255, 0.7);
 }
-.header__menu-item#header__menu-link--notifications .tooltip-text .tooltip-content .tooltip-notification-img {
+.header__menu-item#header__menu-link--notifications
+  .tooltip-text
+  .tooltip-content
+  .tooltip-notification-img {
   width: 70px;
   height: 70px;
   background: rgba(255, 255, 255, 0.07);
@@ -1094,24 +1160,39 @@ h6 {
   align-self: start;
   padding: 5px;
 }
-.header__menu-item#header__menu-link--notifications .tooltip-text .tooltip-content .tooltip-notification-img:not(.tooltip-notification-awardimg) img {
+.header__menu-item#header__menu-link--notifications
+  .tooltip-text
+  .tooltip-content
+  .tooltip-notification-img:not(.tooltip-notification-awardimg)
+  img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
-.header__menu-item#header__menu-link--notifications .tooltip-text .tooltip-content .tooltip-notification-img.tooltip-notification-awardimg {
+.header__menu-item#header__menu-link--notifications
+  .tooltip-text
+  .tooltip-content
+  .tooltip-notification-img.tooltip-notification-awardimg {
   text-align: center;
 }
-.header__menu-item#header__menu-link--notifications .tooltip-text .tooltip-content .tooltip-notification-img.tooltip-notification-awardimg img {
+.header__menu-item#header__menu-link--notifications
+  .tooltip-text
+  .tooltip-content
+  .tooltip-notification-img.tooltip-notification-awardimg
+  img {
   padding-bottom: 20px;
   display: inline-block;
   max-width: 100%;
   max-height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
-.header__menu-item#header__menu-link--notifications .tooltip-text .tooltip-content .tooltip-notification-img.tooltip-notification-awardimg .tooltip-notification-awardimg-name {
+.header__menu-item#header__menu-link--notifications
+  .tooltip-text
+  .tooltip-content
+  .tooltip-notification-img.tooltip-notification-awardimg
+  .tooltip-notification-awardimg-name {
   font-size: 8px;
   margin-bottom: 5px;
   white-space: normal !important;
@@ -1215,12 +1296,12 @@ h6 {
   .header__menu-item#header__menu-link--notifications .tooltip-text {
     left: 60px;
     -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    transform: translateX(-100%);
   }
   .header__menu-item#header__menu-link--notifications .tooltip-text:before {
     left: calc(100% - 57px);
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
   .header__menu-item#header__menu-link--profile {
     margin: 0;

@@ -15,12 +15,16 @@
   content: "";
   width: 100%;
   height: 20px;
-  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
   position: absolute;
   bottom: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 .lot__back-link {
   display: inline-block;
@@ -41,7 +45,7 @@
   height: 8px;
   border-right: 2px solid #6d6f74;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   transition: 0.3s ease;
 }
 .lot__back-link:after {
@@ -53,7 +57,7 @@
   height: 8px;
   border-right: 2px solid #6d6f74;
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   transition: 0.3s ease;
 }
 .lot__main {
@@ -147,13 +151,13 @@
 .lot__progress-steps__tracknum:hover .tooltip-text {
   visibility: hidden;
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   opacity: 0;
 }
 .lot__progress-steps__tracknum.is-active .tooltip-text {
   visibility: visible;
   -webkit-appearance: auto;
-          appearance: auto;
+  appearance: auto;
   opacity: 1;
 }
 .lot__progress-steps__tracknum:after {
@@ -181,7 +185,9 @@
   padding-bottom: 50px;
   transition: 0.5s background-image ease !important;
 }
-.lot__progress-steps .progress-step:not(.lot__progress-steps .progress-step:last-child) .progress-step-heading:after {
+.lot__progress-steps
+  .progress-step:not(.lot__progress-steps .progress-step:last-child)
+  .progress-step-heading:after {
   border: 1px solid #2f53ff;
 }
 .lot__progress-steps .progress-step:before {
@@ -193,7 +199,11 @@
 .lot__progress-steps .progress-step.swiper-slide-prev:before {
   content: "";
   position: absolute;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(23, 26, 30, 0.8) 30%);
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(23, 26, 30, 0.8) 30%
+  );
   width: calc(100% + 50px);
   left: -50px;
   top: -200px;
@@ -206,7 +216,11 @@
 .lot__progress-steps .progress-step.swiper-slide-next:before {
   content: "";
   position: absolute;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(23, 26, 30, 0.8) 30%);
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(23, 26, 30, 0.8) 30%
+  );
   width: calc(100% + 50px);
   left: -50px;
   top: -50px;
@@ -255,7 +269,7 @@
   max-width: 100%;
   max-height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .lot__card-sticker {
   display: flex;
@@ -422,7 +436,7 @@
   height: 8px;
   border: 1px solid #6d6f74;
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   transition: 0.3s ease;
 }
 .lot__card-spoiler:after {
@@ -434,16 +448,16 @@
   height: 8px;
   border: 1px solid #6d6f74;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   transition: 0.3s ease;
 }
 .lot__card-spoiler.is-active:before {
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .lot__card-spoiler.is-active:after {
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 .lot__card-btn {
   display: block;
@@ -518,7 +532,7 @@
 .lot__autoclick input {
   position: relative;
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   background: rgba(255, 255, 255, 0.07);
   border-radius: 12px;
   height: 24px;
@@ -559,7 +573,7 @@
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .lot__review {
   margin: 40px 0 60px;
@@ -611,7 +625,7 @@
   max-width: 100%;
   max-height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .lot__review-video-wrapper {
   position: relative;
@@ -625,20 +639,22 @@
 .lot__review-video-playbtn {
   position: absolute;
   z-index: 50;
-  background: rgba(0, 0, 0, 0.74) url("../img/icons/videobtn.svg") center/auto 60% no-repeat;
+  background: rgba(0, 0, 0, 0.74) url("../img/icons/videobtn.svg") center/auto
+    60% no-repeat;
   border-radius: 20px;
   padding: 15px 12%;
   transition: 0.4s ease;
 }
 .lot__review-video-playbtn.is-active {
   -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  transform: scale(1.5);
   opacity: 0;
   visibility: hidden;
 }
 
 @media (max-width: 1023px) {
-  .lot__col1, .lot__col2 {
+  .lot__col1,
+  .lot__col2 {
     flex: 1 1 100%;
     margin: 0;
   }
@@ -700,7 +716,34 @@
     border: 10px solid #00a76b;
   }
 }
+.progress_mobile_pagination {
+  display: none;
+}
 @media (max-width: 540px) {
+  .progress_mobile_pagination {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    top: 164px !important;
+    z-index: 99;
+    background: #171a1e;
+    padding-top: 20px;
+  }
+  .progress_mobile_pagination span {
+   height: 4px !important;
+   width: 4px !important;
+    margin-right: 5px !important;
+  }
+  .progress_mobile_pagination .swiper-pagination-bullet-active {
+    width: 18px !important;
+  }
+  .lot__progress-steps {
+    height: 180px !important;
+  }
   .lot__review {
     width: 100%;
   }

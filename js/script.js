@@ -207,6 +207,7 @@ document.addEventListener("DOMContentLoaded", function () {
       nav_radio_labels.forEach((element) => {
         if (element.previousElementSibling.checked == true) {
           currency = element.previousElementSibling.getAttribute("value");
+
           if (currency == "roto") {
             currencyText = "ROTO";
             currencyColor = "#2F53FF";
@@ -233,18 +234,18 @@ document.addEventListener("DOMContentLoaded", function () {
         period = nav_select.value;
         if (period === "month") {
           data = [
-            [1, 300],
+            [1, 3400],
             [2, 1500],
-            [3, 50],
+            [3, 5340],
             [4, 9000],
-            [5, 5],
+            [5, 5400],
             [6, 1550],
             [7, 2550],
             [8, 2000],
-            [9, 500],
-            [10, 200],
-            [11, 300],
-            [12, 700],
+            [9, 5000],
+            [10, 27800],
+            [11, 3700],
+            [12, 7700],
           ];
         } else if (period === "week") {
           data = [
@@ -252,7 +253,7 @@ document.addEventListener("DOMContentLoaded", function () {
             [2, 15000],
             [3, 31000],
             [4, 34000],
-            [5, 2000],
+            [5, 29090],
             [6, 37000],
             [7, 20000],
           ];
@@ -319,6 +320,7 @@ document.addEventListener("DOMContentLoaded", function () {
           let barLabel = document.createElement("div");
           barLabel.classList.add("barchart-bar-label");
           barLabel.textContent = data[i][1];
+
           barLabel.style.color = currencyColor;
 
           barLabel.style.fontWeight = "600";
@@ -358,19 +360,26 @@ document.addEventListener("DOMContentLoaded", function () {
           let yTick = document.createElement("div");
           let yTick_line = document.createElement("div");
           yTick.classList.add("barchart-yAxis-tick");
-          yTick.textContent = data[i][1];
+          let statusBar =
+            Math.abs(data[i][1]) > 999
+              ? Math.sign(data[i][1]) *
+                  (Math.abs(data[i][1]) / 1000).toFixed(1) +
+                " k"
+              : Math.sign(data[i][1]) * Math.abs(data[i][1]) + ' k';
+
+          yTick.textContent = statusBar;
           yTick.style.position = "absolute";
           yTick.style.width = "100%";
 
           yTick.style.top =
             yAxis.offsetHeight - 10 - data[i][1] * yScale - 6 + "px";
-          yTick.style.left = -(data[i][1].toString().length + 1) + "ch";
+          yTick.style.left = -6 + "ch";
           yTick.style.fontWeight = "300";
           yTick.style.fontSize = "12px";
           yTick.style.color = "rgba(255,255,255,0.1)";
 
           yTick_line.style.position = "absolute";
-          yTick_line.style.left = `${data[i][1].toString().length + 1 + "ch"}`;
+          yTick_line.style.left = `6ch`;
           yTick_line.style.top = "50%";
           yTick_line.style.transform = "translateY(-50%)";
           yTick_line.style.backgroundColor = "rgba(255,255,255,0.1)";
