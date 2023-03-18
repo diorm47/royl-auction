@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function () {
         [1, 12000],
         [2, 15000],
         [3, 31000],
-        [4, 0],
+        [4, 9000],
         [5, 2000],
         [6, 37000],
         [7, 20000],
@@ -194,7 +194,7 @@ document.addEventListener("DOMContentLoaded", function () {
       let barchartLegend = barchart.parentElement.querySelector(
         ".barchart-heading-legend"
       );
-      let barchartTotal = barchart.parentElement.querySelector(
+      let barchartTotal = barchart.parentElement.parentElement.querySelector(
         ".barchart-heading-total-span"
       );
       let nav_select = barchart.parentElement.querySelector(

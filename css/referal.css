@@ -228,9 +228,9 @@
 }
 .hide_bar .barchart-nav-radio,
 .swiper-slide .barchart-nav-radio {
- position: absolute;
- z-index: -2;
- visibility: hidden;
+  position: absolute;
+  z-index: -2;
+  visibility: hidden;
 }
 .row5__cols12 {
   display: flex;
@@ -329,7 +329,7 @@
 .mobile_row5__cols12_pagination {
   width: auto !important;
   position: absolute;
-  bottom:58px !important;
+  bottom: 58px !important;
   left: 50% !important;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -405,8 +405,16 @@
     font-size: 14px;
   }
 }
-
+.mobile_table {
+  display: none;
+}
 @media (max-width: 600px) {
+  .desktop_table {
+    display: none;
+  }
+  .mobile_table {
+    display: block;
+  }
   .row5__cols12 {
     display: none;
   }
@@ -439,13 +447,75 @@
   }
   .barchart-heading-total {
     margin-bottom: -20px;
-  
   }
 
+  .partner-table-td--regdate {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .partner-table-td--user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .users_table_results th span {
+    font-weight: 400 !important;
+    font-size: 8px !important;
+    line-height: 105% !important;
+    color: rgba(255, 255, 255, 0.4) !important;
+  }
+  .users_table_results th,
+  .users_table_results td {
+    padding-bottom: 0;
+    padding-top: 8px;
+  }
+  .tg .results_tab_text {
+    padding-left: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .tg .results_tab_text span {
+    font-size: 10px !important;
+    line-height: 105% !important;
+    color: rgba(255, 255, 255, 0.4) !important;
+  }
+ .tg .righter {
+    padding-left: 8px !important;
+  }
+  .partner-table-td--gainmonth {
+    padding-left: 12px !important;
+  }
+
+  .partner-table-td--gainall {
+    padding-left: 7px !important;
+  }
+  .tg .loss_res {
+    padding-left: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .top_text_table {
+    font-weight: 400;
+    font-size: 10px !important;
+    line-height: 105% !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+    padding-bottom: 6px !important;
+    padding-left: 0 !important;
+  }
+  .tg tbody {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    padding-bottom: 15px;
+    padding-top: 22px;
+  }
+  .partner-table .row5__col3__heading {
+    margin-bottom: 0;
+  }
+  .partner-table .tg {
+    max-height: 700px !important;
+
+}
 }
 
 .partner-table thead th {
   text-align: center !important;
   align-items: center;
 }
-

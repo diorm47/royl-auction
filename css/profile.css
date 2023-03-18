@@ -463,7 +463,28 @@
     flex-direction: column;
   }
 }
+
+.mobile_profile_barchat {
+  display: none;
+}
+
 @media (max-width: 540px) {
+  .desktop_barchat {
+    display: none;
+  }
+  .mobile_profile_barchat {
+    display: block;
+  }
+ .profile_m_barchat_bottom .barchart-heading-total {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: -10px;
+ }
+ .profile_m_barchat_bottom p span {
+  font-size: 10px;
+ }
+
   .row1__col1__user-avatar-wrapper {
     min-width: 80px !important;
     max-width: 80px !important;
