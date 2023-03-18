@@ -425,6 +425,7 @@
   .row5__col2 {
     margin: 0;
   }
+
 }
 
 @media (max-width: 540px) {
@@ -513,8 +514,16 @@
     max-height: 700px !important;
 
 }
+
+.mobile_row5__cols12 .barchart-heading-total {
+  font-size: 10px !important;
+  text-align: right;
 }
 
+}
+.mobile_row5__cols12 .barchart-heading {
+  align-items: center !important;
+}
 .partner-table thead th {
   text-align: center !important;
   align-items: center;

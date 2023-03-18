@@ -672,6 +672,10 @@
     align-items: center;
     justify-content: center;
   }
+  .lot-first {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media (max-width: 410px) {
