@@ -443,3 +443,9 @@
   }
 
 }
+
+.partner-table thead th {
+  text-align: center !important;
+  align-items: center;
+}
+

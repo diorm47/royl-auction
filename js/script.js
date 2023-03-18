@@ -365,7 +365,7 @@ document.addEventListener("DOMContentLoaded", function () {
               ? Math.sign(data[i][1]) *
                   (Math.abs(data[i][1]) / 1000).toFixed(1) +
                 " k"
-              : Math.sign(data[i][1]) * Math.abs(data[i][1]) + ' k';
+              : Math.sign(data[i][1]) * Math.abs(data[i][1]) + " k";
 
           yTick.textContent = statusBar;
           yTick.style.position = "absolute";
@@ -373,6 +373,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
           yTick.style.top =
             yAxis.offsetHeight - 10 - data[i][1] * yScale - 6 + "px";
+          let n = 10;
+
           yTick.style.left = -6 + "ch";
           yTick.style.fontWeight = "300";
           yTick.style.fontSize = "12px";
