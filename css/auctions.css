@@ -472,14 +472,7 @@
 .auction__card-date-value span {
   margin: 0 10px;
 }
-.auction__card-date.is-timer {
-  font-size: 18px;
-  display: block;
-  text-align: center;
-  background: #13161a;
-  border-radius: 8px;
-  display: flex;
-}
+
 .auction__card-date.is-disabled {
   color: rgba(255, 255, 255, 0.4);
 }
@@ -678,7 +671,17 @@
   }
 }
 
+@media (max-width: 480px) { 
+  .bitco_mobile .auction__card-sticker .auction__card-sticker-p:first-of-type {
+     margin-top: -120px;
+  }
+}
+
+
 @media (max-width: 410px) {
+  .bitco_mobile .auction__card-sticker .auction__card-sticker-p:first-of-type {
+    margin-top: -140px;
+ }
   .auction__cards {
     grid-gap: 10px;
   }
@@ -708,6 +711,9 @@
   .auction__card-sticker-p:first-of-type {
     margin-top: -145%;
   }
+  .bitco_mobile .auction__card-sticker .auction__card-sticker-p:first-of-type {
+    margin-top: -160px;
+ }
 }
 
 @media (max-width: 360px) {
